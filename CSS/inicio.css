@@ -1,0 +1,108 @@
+    #cuadrado {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 30px;
+        margin-left: 210px;
+    }
+
+    #cuadrado2 {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        margin-top: 30px;
+        margin-left: 210px;
+    }
+    
+    .imagen1 {
+        background-image: url(../FOTO/1x/inicio\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen1:hover {
+        background-image: url(../FOTO/1x/inicio\ claro.png);
+    }
+
+    .imagen2 {
+        background-image: url(../FOTO/1x/eventos\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen2:hover {
+        background-image: url(../FOTO/1x/eventos\ claro.png);
+    }
+
+    .imagen3 {
+        background-image: url(../FOTO/1x/monumentos\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen3:hover {
+        background-image: url(../FOTO/1x/monumento\ claro.png);
+    }
+
+    .imagen4 {
+        background-image: url(../FOTO/1x/Cercanías\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen4:hover {
+        background-image: url(../FOTO/1x/cercania\ claro.png);
+    }
+
+    .imagen5 {
+        background-image: url(../FOTO/1x/Gastronomia\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen5:hover {
+        background-image: url(../FOTO/1x/gastronomia\ claro.png);
+    }
+
+    .imagen6 {
+        background-image: url(../FOTO/1x/rutas\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen6:hover {
+        background-image: url(../FOTO/1x/rutas\ claro.png);
+    }
+
+    .imagen7 {
+        background-image: url(../FOTO/1x/hoteles\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen7:hover {
+        background-image: url(../FOTO/1x/hoteles\ claro.png);
+    }
+
+    .imagen8 {
+        background-image: url(../FOTO/1x/formulario\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen8:hover {
+        background-image: url(../FOTO/1x/formulario\ claro.png);
+    }
+
+    #imgprin img {
+        width: 100%;
+        height: 80%;
+    }

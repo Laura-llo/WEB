@@ -5,184 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO PIEDRAHÍTA</title>
     <link rel="stylesheet" href="CSS/estilo.css">
-    <Script src="JS/ingles.js" defer></Script>
+    <script src="JS/ingles.js" defer></script>
+    <script src="JS/menu.js" defer></script>
+    <script src="JS/viewport.js" defer></script>
+    <link rel="stylesheet" href="CSS/inicio.css">
+
 </head>
 <body>
-
-    <nav>
-        <section>
-            <img src="FOTO/LOGOS/logos-08.png" alt="">
-        </section>
-
-        <section>
-         <ul class="menu">
-            <li class="cast">
-                <a href="index.html">Inicio</a>
-            </li>
-            <li class="eng">
-                <a href="index.html">Home</a>
-            </li>
-
-            <li class="cast">
-                <a href="HTML/eventos.html">Eventos</a>
-            </li>
-            <li class="eng">
-                <a href="HTML/eventos.html">Events</a>
-            </li>
-
-            <li class="cast">
-                <a href="">Qué ver</a>
-            </li>
-            <li class="eng">
-                <a href="">to see</a>
-            </li>
-
-            <li class="cast">
-                <a href="">Cercanías</a>
-            </li>
-            <li class="eng">
-                <a href="">Surroundings</a>
-            </li>
-
-            <li class="cast">
-                <a href="">Gastronomía</a>
-            </li>
-            <li class="eng">
-                <a href="">Gastronomy</a>
-            </li>
-            
-            <li class="cast">
-                <a href="">Rutas</a>
-            </li>
-            <li class="eng">
-                <a href="">Trails</a>
-            </li>
-
-            <li class="cast">
-                <a href="">Hoteles</a>
-            </li>
-            <li class="eng">
-                <a href="">Hotels</a>
-            </li>
-
-            <li class="cast">
-                <a href="">Formulario</a>
-            </li>
-            <li class="eng">
-                <a href="">Form</a>
-            </li>
-
-            <li id="idioma">
+ 
+    <header>
+        <img src="FOTO/LOGOS/logoblanco.png" alt="" id="logo">
+        <nav class="menuDesktop">
+            <a href="index.html" class="cast">Inicio</a>
+            <a href="index.html" class="eng">Home</a>
+            <a href="HTML/eventos.html" class="cast">Eventos</a>
+            <a href="HTML/eventos.html" class="eng">Events</a>
+            <a href="#" class="cast">Monumentos</a>
+            <a href="#" class="eng">Monuments</a>
+            <a href="#" class="cast">Cercanías</a>
+            <a href="#" class="eng">Surroundings</a>
+            <a href="#" class="cast">Gastronomía</a>
+            <a href="#" class="eng">Gastronomy</a>
+            <a href="#" class="cast">Rutas</a>
+            <a href="#" class="eng">Trails</a>
+            <a href="#" class="cast">Hoteles</a>
+            <a href="#" class="eng">Hotels</a>
+            <a href="#" class="cast">Formulario</a>
+            <a href="#" class="eng">Form</a>
+            <a href="#" id="idioma"> 
                 <span id="iconoIng" class="cast">ENG</span>
                 <span id="iconoEsp" class="eng">ESP</span>
-            </li>
-         </ul>
-        </section>
-    </nav>
+            </a>
+        </nav>
+
+        <section id="menu">
+            <button id="btnMenu">
+                <span>☰</span>
+            </button>
+        </section>
+
+    </header>
 
     <main>
-        <section id="video">
-            <video controls autoplay muted src="VIDEO/corte invisible_Laura_Llopis.mp4"></video>
+        <section id="imgprin">
+            <img src="FOTO/casas del puerto 6.jpg" alt="">
         </section>
 
-        <section>
-            <h1 class="cast">BIENVENIDO</h1>
-            <h1 class="eng">WELCOME</h1>
+        <section id="cuadrado">
+            <a href="index.html"><div class="imagen1 cast"></div></a>
+            <a href="HTML/eventos.html"> <div class="imagen2 cast"></div></a>
+            <a href=""> <div class="imagen3 cast"></div></a>
+            <a href=""> <div class="imagen4 cast"></div></a>
         </section>
-
-        <section class="s1">
-            <h3 class="cast">¿Quieres visitarnos?</h3>
-            <h3 class="eng">Would you like to visit us?</h3>
-
-            <p class="cast">
-               Si no sabes que visitar aquí en Piedrhíta,
-               puedes ver todos los monumentos y todo lo 
-               que quieras en este botón.
-            </p>
-            <p class="eng">
-                 If you don’t know what to visit here in Piedrahíta,
-                 you can see all the monuments
-                 and anything else you’d like by clicking this button.
-            </p>
-
-            <button id="boton1">
-                <a href="" class="cast">Ver mas</a>
-                <a href="" class="eng">See more</a>
-            </button>
-        </section>
-
-        <section class="s2">
-            <h3 class="cast">¿Quieres información?</h3>
-            <h3 class="eng">Would you like some information?</h3>
-
-            <p class="cast">
-              Si necesitas información sobre cualquier cosa visita
-              nuestra web para ponerte informar, si algo no entiendes
-              puedes rellenar el formulario o escribir al gmail.
-            </p>
-            <p class="eng">
-              If you need information about 
-              anything, visit our website to 
-              get informed. If there’s something
-              you don’t understand, you can fill out 
-              the form or send us an email.
-            </p>
-
-            <button>
-                <a href="" class="cast">Ver mas</a>
-                <a href="" class="eng">See more</a>
-            </button>
+        <section id="cuadrado2">
+            <a href=""> <div class="imagen5 cast"></div></a>
+            <a href=""> <div class="imagen6 cast"></div></a>
+            <a href=""> <div class="imagen7 cast"></div></a>
+            <a href=""> <div class="imagen8 cast"></div></a>
         </section>
     </main>
 
-    <footer>
 
-        <main id="foot1">
-            <section class="tex" id="contacto">
-                <h2 class="cast">Contacto</h2>
-                <h2 class="eng">Contact</h2>
-
-                <ul>
-                    <li>663 489 348</li>
-                    <li>piedrahitatourism@gmail.com</li>
-                </ul>
-            </section>
-
-            <section class="tex" id="redes">
-                <h2 class="cast">Redes Sociales</h2>
-                <h2 class="eng">Social media</h2>
-
-                <ul>
-                    <li>Instagram: piedrahita_natural_tourism</li>
-                    <li>Tik Tok: piedrahita_natural_tourism</li>
-                    <li>Facebook: piedrahita_natural_tourism</li>
-                </ul>
-            </section>
-
-            <section id="footimg">
-                <img src="FOTO/LOGOS/logo ayuntamiento-12.png" alt="">
-            </section>
-
-            <section id="footimg1">
-                <img src="FOTO/LOGOS/logos-10.png" alt="">
-            </section>
-
-        </main>
-
-        <main id="foot2">
-            <a class="cast" href="">
-                Política legal
-                 / Aviso legal / 
-                 Política de Cookies
-            </a>
-
-            <a class="eng" href="">
-                Legal Policy
-                 / Legal Notice / 
-                Cookie Policy
-            </a>
-        </main>
-    </footer>
-    
+  
 </body>
 </html>

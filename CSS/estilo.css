@@ -1,10 +1,6 @@
 body {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color:rgb(255, 255, 255);
-    width: 100%;
+    margin: 0px;
     font-family: "montserrat";
-    margin: 0;
 }
 
 @font-face {
@@ -12,8 +8,129 @@ body {
     src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
 }
 
-.menu span {
-    transition: all .3s ease-in-out;
+header {
+    background-color: #1b5428;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logo {
+    width: 200px;
+    height: 100px;
+}
+
+/* TAMAÑO DEL BOTÓN DE HAMBURGUESA */
+#btnMenu {
+    background-color: #1b5428;
+    border: #b8d79e;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnMenu:hover {
+    transform: scale(1.25);
+    transition: all 0.5s ease-out;
+}
+
+/* SE AJUSTA EL SPAN DE LAS 3 RAYAS PARA CENTRARLO MEJOR*/
+#btnMenu span {
+    color: white;
+    font-size: 1.6rem;
+    position: relative;
+    top: -10px;
+    right: -50px;
+}
+
+#btnMenu span:hover{
+    color: #b8d79e;
+}
+
+#menu {
+    min-height: 3rem;
+}
+
+/* EN DISEÑO MÓVIL NO SE MUESTRA EL MENÚ PARA ESCRITORIO */
+.menuDesktop {
+    display: none;
+    font-size: 12pt;
+}
+
+/* CAMBIO EL DISEÑO A TABLET Y ESCRITORIO */
+@media (min-width: 576px) {
+    /* En escritorio se muestra el menú completo */
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
+    /* En escritorio se oculta el botón de hamburguesa */
+    #btnMenu {
+        display: none;
+    }
+
+    #logo {
+    width: 200px;
+    height: 100px;
+    margin-left: -10px;
+    margin-top: -40px;
+    }
+}
+
+.menuDesktop a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-out;
+    margin-top: 30px;
+}
+
+.menuDesktop a:hover {
+    color: #b8d79e;
+}
+
+@keyframes abreCaja {
+    from {
+        transform: scaleY(0%);
+    }
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+/* AL DESPLEGAR EL MENU EN EL MÓVIL */
+/* Al pulsar el botón de hamburguesa se añade/quita esta clase */
+/* Al tener esta clase, se muestra el menú en una caja desplegada */
+.menuDesplegado {
+    background-color: #1b5428;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: 56px;
+
+    padding: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    transform-origin: top;
+}
+
+span {
+    transition: all 0.3s ease-in-out;
     margin: 2px;
 }
 
@@ -21,6 +138,7 @@ body {
     display: flex;
     margin: 20px;
     color: white;
+    margin-top: 29px;
 }
 
 #iconoIng:hover {
@@ -37,261 +155,3 @@ body {
     display: none;
 }
 
-nav img {
-    width: 40%;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    background-color: #1c5427;
-    height: 35%;
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-nav li {
-    /* margin: 20px; */
-    list-style: none;
-}
-
-nav a:hover {
-    color: #b8d79e;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-video {
-    margin-top: 45%;
-    width: 100%;
-}
-
-main h1 {
-    text-align: center;
-    color: #1c5427;
-    font-size: 3rem;
-}
-
-.s1 {
-    background-color: #b8d79e;
-    height: 25%;
-    width: 100%;
-    padding-top: 30px;
-}
-
-h3 {
-    margin-left: 30px;
-    margin-top: 10px;
-    color: #1c5427;
-}
-
-section p {
-    margin: 30px;
-    color: #1c5427;
-}
-
-button {
-    margin-left: 30px;
-    padding-top: 5px;
-    margin-bottom: 30px;
-    background-color: #1c5427;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 30px;
-    width: 150px;
-    height: 50px;
-}
-
-button:hover {
-    background-color: #2a7739;
-    transform: scale(1.1);
-}
-
-button a:hover {
-    color: #b8d79e;
-    transform: scale(1.1);
-}
-
-.s2 {
-    background-color:#ffffff;
-    height: 40%;
-    width: 100%;
-    text-align: right;
-    margin-top: 30px;
-}
-
-.s2 button {
-    margin-right: 30px;
-}
-
-footer {
-    background-color: #1c5427;
-    color: #b8d79e;
-    margin-top: 160px;
-}
-
-footer h2, li {
-    text-align: center;
-}
-
-#foot1 {
-    display: flex;
-    flex-direction: column;
-}
-
-#foot1 img {
-    width: 40%;
-}
-
-#foot1 h2 {
-    margin-top: 60px;
-    margin-left: 40px;
-}
-
-#foot1 li{
-   list-style: none; 
-}
-
-#foot2 a {
-    color: #b8d79e;
-    text-decoration: none;
-    font-size: 1.5rex;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-
-#footimg {
-    text-align: center;
-    margin-left: 50px;
-    gap: 100px;
-}
-
-#footimg1 {
-    text-align: center;
-    margin-left: 50px;
-    gap: 100px;
-}
-
-@media screen and (min-width:768px) {
-    
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-row: 1fr 1fr 1fr ;
-    }
-
-    nav{
-        height: 20%;
-        grid-column: 1/5;
-        grid-row: 1;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 10px;
-        margin-top: 25px;
-    }
-
-    nav li{
-        margin: 30px;
-    }
-
-    nav img{
-        width: 60%;
-    }
-
-    #video{
-        margin-top: -530px;
-    }
-
-    main{
-        grid-column: 1/5;
-        grid-row: 2;
-    }
-
-    main h1{
-        font-size: 6rem;
-    }
-
-    h3{
-        font-size: 3rem;
-        padding: 10px;
-    }
-
-    section p{
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    button{
-        margin-top: 20px;
-        width: 200px;
-        height: 80px;
-        border-radius: 40px;
-        font-size: 2rem;
-    }
-
-    footer{
-        margin-top: 400px;
-        grid-column: 1/5;
-        grid-row: 3;
-    }
-
-    #foot1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
-    }
-
-    #contacto{
-        grid-column: 1/2;
-        grid-row: 1;
-    }
-
-    #redes {
-        grid-column: 1/2;
-        grid-row: 2;
-    }
-
-    #footimg {
-        grid-column: 2/3;
-        grid-row: 1;
-    }
-
-    #footimg1 {
-        grid-column: 2/3;
-        grid-row: 2;
-    }
-
-    #foot1 h2{
-        font-size: 2.2rem;
-        margin-top: 100px;
-    }
-
-    #foot1 li{
-        font-size: 1.5rem;
-    }
-
-     footer img {
-        margin-top: 80px;
-    }
-
-    #foot2 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-}

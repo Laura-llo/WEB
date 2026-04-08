@@ -381,4 +381,15 @@ footer h2, li {
     #foot2 a {
         color: #b8d79e;
     }
+
+    .imagenpro {
+        background-image: url(../FOTO/1x/fotorutacaballo.png);
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+    }
+
+    .imagenpro:hover {
+        background-image: url(../FOTO/1x/rutacaballo.png);
+    }
 }
