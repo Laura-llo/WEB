@@ -1,395 +1,507 @@
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color:rgb(255, 255, 255);
-    width: 100%;
-    font-family: "montserrat";
-    margin: 0;
-}
-
-@font-face {
-    font-family: "montserrat";
-    src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
-}
-
-.menu span {
-    transition: all .3s ease-in-out;
-    margin: 2px;
-}
-
-#idioma {
-    display: flex;
-    margin: 20px;
-    color: white;
-}
-
-#iconoIng:hover {
-    color: #b8d79e;
-    transform: scale(1.3);
-}
-
-#iconoEsp:hover {
-    color: #b8d79e;
-    transform: scale(1.3);
-}
-
-.oculta {
-    display: none;
-}
-
-nav img {
-    width: 40%;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    background-color: #1c5427;
-    height: 35%;
-    width: 100%;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-
-nav li {
-    /* margin: 20px; */
-    list-style: none;
-}
-
-nav a:hover {
-    color: #b8d79e;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.aventuras {
-    margin-top: 300px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-img {
-    width: 95%;
-    margin: 15px;
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    color: #1c5427;
-}
-
-p {
-    font-size: 1.8rex;
-    margin: 15px;
-    color: #1c5427;
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin: 15px;
-    color: #1c5427;
-}
-
-button {
-    padding-top: 5px;
-    margin-bottom: 30px;
-    background-color: #1c5427;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 30px;
-    width: 120px;
-    height: 40px;
-    margin-left: 390px;
-}
-
-button:hover {
-    background-color: #2a7739;
-    transform: scale(1.1);
-}
-
-button a:hover {
-    color: #b8d79e;
-    transform: scale(1.1);
-}
-
-.cardsdos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-    background-color: #b8d79e;
-    height: 2000px;
-    align-items: center;
-}
-
-.cardsdos img {
-    width: 90%;
-    margin-top: 30px;
-    margin: 10px;
-}
-
-#card {
-    background-color: white;
-    width: 230px;
-    height: 450px;
-    margin-left: 20px;
-}
-
-.feria {
-   margin-top: 60px;
-}
-
-.feria img {
-    width: 50%;
-}
-
-#caballo {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-}
-
-#caballoverde {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    background-color: #b8d79e;
-}
-
-.cardsuno {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: #b8d79e;
-    height: 2600px;
-    align-items: center;
-}
-
-.cardsuno img {
-    width: 95%;
-    margin-top: 30px;
-    margin: 10px;
-}
-
-.card1 {
-    background-color: white;
-    width: 430px;
-    height: 72
-    0px;
-    margin-left: 20px;
-    margin-top: 100px;
-    color: white;
-}
-
-
-footer {
-    background-color: #1c5427;
-    color: #b8d79e;
-    margin-top: 160px;
-}
-
-footer h2, li {
-    text-align: center;
-}
-
-#foot1 {
-    display: flex;
-    flex-direction: column;
-}
-
-#foot1 img {
-    width: 40%;
-}
-
-#foot1 h2 {
-    margin-top: 60px;
-    margin-left: 40px;
-}
-
-#foot1 li{
-   list-style: none; 
-}
-
-#foot2 a {
-    color: #b8d79e;
-    text-decoration: none;
-    font-size: 1.5rex;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-
-#footimg {
-    text-align: center;
-    margin-left: 50px;
-    gap: 100px;
-}
-
-#footimg1 {
-    text-align: center;
-    margin-left: 50px;
-    gap: 100px;
-}
-
-@media screen and (min-width:768px) {
-    
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    }
-
-    nav{
-        height: 20%;
-        grid-column: 1/5;
-        grid-row: 1;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 10px;
-        margin-top: 25px;
-    }
-
-    nav li{
-        margin: 30px;
-    }
-
-    nav img{
-        width: 55%;
-    }
-
-    h1 {
-        font-size: 6rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-        padding: 10px;
-        margin-left: 35px;
-    }
-
-    p {
-        margin-left: 40px;
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-     main img {
-        margin: 35px;
-    }
-
-    main {
-        grid-column: 1/5;
-        grid-row: 2;
-    }
-
-    aside {
-        grid-column: 1/5;
-        grid-row: 3;
-    }
-
-    .feria {
-        grid-column: 1/5;
-        grid-row: 4;
-    }
-
-    .cardsuno{
-        grid-column: 1/5;
-        grid-row: 5;
-    }
-
-    button{
-        margin-top: 20px;
-        width: 200px;
-        height: 80px;
-        border-radius: 40px;
-        font-size: 2rem;
-    }
-
-    #s2{
-        text-align: right;
-        margin-right: 50px;
-    }
-
-    footer{
-        margin-top: 400px;
-        grid-column: 1/5;
-        grid-row: 6;
-    }
-
-    #foot1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
-    }
-
-    #contacto{
-        grid-column: 1/2;
-        grid-row: 1;
-    }
-
-    #redes {
-        grid-column: 1/2;
-        grid-row: 2;
-    }
-
-    #footimg {
-        grid-column: 2/3;
-        grid-row: 1;
-    }
-
-    #footimg1 {
-        grid-column: 2/3;
-        grid-row: 2;
-    }
-
-    #foot1 h2{
-        font-size: 2.2rem;
-        margin-top: 100px;
-    }
-
-    #foot1 li{
-        font-size: 1.5rem;
-        list-style: none; 
-    }
-
-     footer img {
-        margin-top: 80px;
-        width: 40%;
-    }
-
-    #foot2 {
-        text-align: center;
-        margin-left: 130px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-size: 1.5rex;
-    }
-
-    #foot2 a {
-        color: #b8d79e;
-    }
-
-    .imagenpro {
-        background-image: url(../FOTO/1x/fotorutacaballo.png);
-        width: 150px;
-        height: 150px;
-        background-size: cover;
-    }
-
-    .imagenpro:hover {
-        background-image: url(../FOTO/1x/rutacaballo.png);
-    }
-}
+   body {
+       font-family: "montserrat";
+   }
+
+   @font-face {
+       font-family: "montserrat";
+       src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
+   }
+
+   #parapente {
+       width: 100%;
+   }
+
+   h1 {
+       color: #1c5427;
+       text-align: center;
+       font-size: 4rem;
+       margin-top: 80px;
+   }
+
+   h3 {
+       color: #1c5427;
+       margin-left: 20px;
+   }
+
+   p {
+       margin-left: 20px;
+   }
+
+   .vermas {
+       color: white;
+       background-color: #1c5427;
+       border: none;
+       height: 40px;
+       width: 80px;
+       margin-left: 90%;
+   }
+
+   @media (max-width: 576px) {
+       .vermas {
+           height: 40px;
+           width: 80px;
+           margin-left: 80%;
+       }
+
+       p {
+           font-size: 0.7rem;
+       }
+   }
+
+   button a {
+       color: white;
+       text-decoration: none;
+       font-size: 1rem;
+   }
+
+   button:hover {
+       background-color: #b8d79e;
+   }
+
+   button a:hover {
+       color: #1c5427;
+   }
+
+   #cuadrado {
+       display: flex;
+       flex-direction: row;
+       gap: 50px;
+       margin-top: 80px;
+       margin-left: 210px;
+   }
+
+   #cuadrado2 {
+       display: flex;
+       flex-direction: row;
+       gap: 50px;
+       margin-top: 50px;
+       margin-left: 210px;
+   }
+
+   @media (max-width: 576px) {
+       #cuadrado {
+           display: flex;
+           flex-direction: column;
+           margin-left: 150px;
+       }
+
+       #cuadrado2 {
+           display: flex;
+           flex-direction: column;
+           margin-left: 150px;
+       }
+   }
+
+   .imagen1cast {
+       background-image: url(../FOTO/1x/fotorutacaballo.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen1cast:hover {
+       background-image: url(../FOTO/1x/rutacaballo.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen1eng {
+       background-image: url(../FOTO/1x/fotorutacaballo.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen1eng:hover {
+       background-image: url(../FOTO/1x/horse\ riding\ route.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen2cast {
+       background-image: url(../FOTO/1x/rutabicicleta\ normal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen2cast:hover {
+       background-image: url(../FOTO/1x/ruta\ bicicleta.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen2eng {
+       background-image: url(../FOTO/1x/rutabicicleta\ normal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen2eng:hover {
+       background-image: url(../FOTO/1x/bike\ route.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen3cast {
+       background-image: url(../FOTO/1x/torearnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen3cast:hover {
+       background-image: url(../FOTO/1x/torear.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen3eng {
+       background-image: url(../FOTO/1x/torearnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen3eng:hover {
+       background-image: url(../FOTO/1x/torear\ ingles.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen4cast {
+       background-image: url(../FOTO/1x/rutas\ en\ cuatsnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen4cast:hover {
+       background-image: url(../FOTO/1x/rutas\ en\ quats.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen4eng {
+       background-image: url(../FOTO/1x/rutas\ en\ cuatsnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen4eng:hover {
+       background-image: url(../FOTO/1x/guad\ route.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen5cast {
+       background-image: url(../FOTO/1x/piraguismo.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen5cast:hover {
+       background-image: url(../FOTO/1x/piraguiesmo.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen5eng {
+       background-image: url(../FOTO/1x/piraguismo.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen5eng:hover {
+       background-image: url(../FOTO/1x/canoeing.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen6cast {
+       background-image: url(../FOTO/1x/caza\ y\ pesca\ normal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen6cast:hover {
+       background-image: url(../FOTO/1x/caza\ y\ pesca.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen6eng {
+       background-image: url(../FOTO/1x/caza\ y\ pesca\ normal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen6eng:hover {
+       background-image: url(../FOTO/1x/hunting\ and\ fishing.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen7cast {
+       background-image: url(../FOTO/1x/paintballnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen7cast:hover {
+       background-image: url(../FOTO/1x/paintball.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen7eng {
+       background-image: url(../FOTO/1x/paintballnormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen7eng:hover {
+       background-image: url(../FOTO/1x/paintball\ ingles.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen8cast {
+       background-image: url(../FOTO/1x/esquinormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen8cast:hover {
+       background-image: url(../FOTO/1x/esqui.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagen8eng {
+       background-image: url(../FOTO/1x/esquinormal.png);
+       width: 160px;
+       height: 160px;
+       background-size: cover;
+   }
+
+   .imagen8eng:hover {
+       background-image: url(../FOTO/1x/skiing.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   #feria {
+       width: 100%;
+       margin-top: 30px;
+   }
+
+   .ferias1 {
+       display: flex;
+       flex-direction: row;
+       margin-top: 30px;
+   }
+
+   #texto p {
+       margin-right: 65px;
+   }
+
+   #texto h3 {
+       margin-right: 65px;
+   }
+
+   .ferias1 img {
+       margin-top: 50px;
+       width: 40%;
+       margin-left: 80px;
+   }
+
+   #texto {
+       margin-top: 100px;
+       margin-left: -220px;
+   }
+
+   #texto1 {
+       margin-top: 60px;
+       margin-right: 60px;
+       margin-left: 60px;
+   }
+
+   .ferias2 {
+       display: flex;
+       flex-direction: row;
+       margin-top: 80px;
+   }
+
+   .ferias2 img {
+       margin-top: 20px;
+       width: 60%;
+       margin-left: 260px;
+   }
+
+   #verdeclaro {
+       background-color: #b8d79e;
+       width: 100%;
+       height: 830px;
+       margin-top: 80px;
+   }
+
+   @media (max-width: 576px) {
+
+       #feria {
+           width: 100%;
+           margin-top: 30px;
+       }
+
+       .ferias1 {
+           display: flex;
+           flex-direction: column;
+           margin-top: 30px;
+       }
+
+       .ferias1 img {
+           margin-top: 30px;
+           width: 60%;
+           margin-left: 80px;
+       }
+
+       #texto {
+           margin-top: 100px;
+           margin-left: 0px;
+           margin-right: 15px;
+       }
+
+       #texto1 {
+           margin-top: 60px;
+           margin-left: 0px;
+       }
+
+       #texto p {
+           margin-right: 5px;
+       }
+
+       #texto h3 {
+           margin-right: 5px;
+       }
+
+       .ferias2 {
+           display: flex;
+           flex-direction: column-reverse;
+           margin-top: 80px;
+       }
+
+       .ferias2 img {
+           width: 60%;
+           margin-left: 80px;
+       }
+
+       #verdeclaro {
+           background-color: #b8d79e;
+           width: 100%;
+           height: 950px;
+           margin-top: 80px;
+       }
+   }
+
+   #fiesta {
+       display: flex;
+       flex-direction: row;
+       gap: 100px;
+       margin-top: 80px;
+       margin-left: 210px;
+   }
+
+   @media (max-width: 576px) {
+       #fiesta {
+           display: flex;
+           flex-direction: column;
+           margin-left: 125px;
+       }
+   }
+
+   .imagenfiesta1cast {
+       background-image: url(../FOTO/1x/fiestas.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta1cast:hover {
+       background-image: url(../FOTO/1x/fiestas\ tex.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagenfiesta1eng {
+       background-image: url(../FOTO/1x/fiestas.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta1eng:hover {
+       background-image: url(../FOTO/1x/fiestas\ tex\ ingles.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagenfiesta2cast {
+       background-image: url(../FOTO/1x/fiestas2.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta2cast:hover {
+       background-image: url(../FOTO/1x/fiestas\ tex2.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagenfiesta2eng {
+       background-image: url(../FOTO/1x/fiestas2.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta2eng:hover {
+       background-image: url(../FOTO/1x/fiestas\ tex2\ ingles.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagenfiesta3cast {
+       background-image: url(../FOTO/1x/fiestas3.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta3cast:hover {
+       background-image: url(../FOTO/1x/fiesta\ tex3.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }
+
+   .imagenfiesta3eng {
+       background-image: url(../FOTO/1x/fiestas3.png);
+       width: 200px;
+       height: 200px;
+       background-size: cover;
+   }
+
+   .imagenfiesta3eng:hover {
+       background-image: url(../FOTO/1x/fiestas\ tex3\ ingles.png);
+       transform: scale(1.2);
+       transition: 0.5s ease-in-out;
+   }

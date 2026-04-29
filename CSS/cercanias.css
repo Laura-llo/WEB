@@ -1,0 +1,107 @@
+body {
+    font-family: "montserrat";
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
+}
+
+.vermas {
+    background-color: white;
+    border: none;
+    height: 80px;
+    width: 140px;
+    margin-left: 82%;
+    margin-top: 450px;
+    border: #1c5427 2px solid;
+}
+
+@media (max-width: 576px) {
+    .vermas {
+        height: 80px;
+        width: 100px;
+        margin-left: 70%;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+button a {
+    color: #1c5427;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #b8d79e;
+    border: white 2px solid;
+}
+
+button a:hover {
+    color: white;
+}
+
+#barcodeavila {
+    background-image: url(../FOTO/1x/BARCO\ DE\ AVILA\ CERCANIA.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#bonilla {
+    background-image: url(../FOTO/1x/BONILLA\ CERCANIAS.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#casasdelpuerto {
+    background-image: url(../FOTO/1x/CASAS\ DEL\ PUERTO\ CERCANIAS.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#villafranca {
+    background-image: url(../FOTO/1x/VILLA\ FRANCA\ CERCANIAS.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/* @media (max-width: 576px) {
+    #barcodeavila {
+        background-image: url(../FOTO/1x/BARCO\ DE\ AVILA\ CERCANIA.png);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+
+    #bonilla {
+        background-image: url(../FOTO/1x/BONILLA\ CERCANIAS.png);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+
+    #casasdelpuerto {
+        background-image: url(../FOTO/1x/CASAS\ DEL\ PUERTO\ CERCANIAS.png);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+
+    #villafranca {
+        background-image: url(../FOTO/1x/VILLA\ FRANCA\ CERCANIAS.png);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+} */
+
+#fotcerc {
+    margin-top: 0px;
+}

@@ -1,0 +1,157 @@
+body {
+    font-family: "montserrat";
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
+}
+
+#hotel1 {
+    display: flex;
+    flex: row;
+    margin: 30px;
+    gap: 30px;
+}
+
+#hotel1 div img {
+    width: 700px;
+    height: 500px;
+}
+
+#hotel2 {
+    display: flex;
+    flex: row;
+    margin: 30px;
+    gap: 30px;
+}
+
+#hotel2 div img {
+    width: 700px;
+    height: 500px;
+}
+
+#hotel3 {
+    display: flex;
+    flex: row;
+    margin: 30px;
+    gap: 30px;
+}
+
+#hotel3 div img {
+    width: 700px;
+    height: 500px;
+}
+
+#hotel4 {
+    display: flex;
+    flex: row;
+    margin: 30px;
+    gap: 30px;
+}
+
+#hotel4 div img {
+    width: 700px;
+    height: 500px;
+}
+
+h3 {
+    color: #1c5427;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 576px) {
+    #hotel1 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    #hotel1 div img {
+        width: 400px;
+        height: 200px;
+    }
+
+    #hotel2 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    #hotel2 div img {
+        width: 400px;
+        height: 200px;
+    }
+
+    #hotel3 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    #hotel3 div img {
+        width: 400px;
+        height: 200px;
+    }
+
+    #hotel4 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    #hotel4 div img {
+        width: 400px;
+        height: 200px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h3 {
+    color: #1c5427;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+}
+
+.vermas {
+    color: white;
+    background-color: #1c5427;
+    border: none;
+    height: 40px;
+    width: 80px;
+    margin-left: 80%;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #b8d79e;
+}
+
+button a:hover {
+    color: #1c5427;
+}
+
+@media (max-width: 576px) {
+    .vermas {
+        height: 35px;
+        width: 60px;
+        margin-left: 85%;
+    }
+
+    button a {
+    font-size: 0.7rem;
+}
+}

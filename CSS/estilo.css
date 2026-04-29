@@ -11,16 +11,16 @@ body {
 header {
     background-color: #1b5428;
     color: white;
-    padding: 10px;
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 1rem;
 }
 
 #logo {
-    width: 200px;
-    height: 100px;
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: -85px;
 }
 
 /* TAMAÑO DEL BOTÓN DE HAMBURGUESA */
@@ -31,11 +31,11 @@ header {
     height: 3rem;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 #btnMenu:hover {
     transform: scale(1.25);
-    transition: all 0.5s ease-out;
 }
 
 /* SE AJUSTA EL SPAN DE LAS 3 RAYAS PARA CENTRARLO MEJOR*/
@@ -43,8 +43,8 @@ header {
     color: white;
     font-size: 1.6rem;
     position: relative;
-    top: -10px;
-    right: -50px;
+    top: -1px;
+    right: -60px;
 }
 
 #btnMenu span:hover{
@@ -66,7 +66,9 @@ header {
     /* En escritorio se muestra el menú completo */
     .menuDesktop {
         display: flex;
-        gap: 15px;
+    }
+    .menuDesktop a{
+        margin-top: 30px;
     }
     /* En escritorio se oculta el botón de hamburguesa */
     #btnMenu {
@@ -74,10 +76,9 @@ header {
     }
 
     #logo {
-    width: 200px;
-    height: 100px;
-    margin-left: -10px;
-    margin-top: -40px;
+    width: 15%;
+    height: auto;
+    position: static;
     }
 }
 
@@ -85,7 +86,6 @@ header {
     text-decoration: none;
     color: white;
     transition: all 0.5s ease-out;
-    margin-top: 30px;
 }
 
 .menuDesktop a:hover {
@@ -122,6 +122,7 @@ header {
     padding: 1.5rem;
     padding-top: 1rem;
     font-size: 1.3rem;
+    margin-top: 50px;
     
     animation-name: abreCaja;
     animation-duration: 0.5s;
@@ -132,13 +133,16 @@ header {
 span {
     transition: all 0.3s ease-in-out;
     margin: 2px;
+    margin-left: -50px;
 }
 
 #idioma {
     display: flex;
     margin: 20px;
     color: white;
-    margin-top: 29px;
+    margin-top: 28px;
+    margin-left: 100px;
+    margin-right: -50px;
 }
 
 #iconoIng:hover {
