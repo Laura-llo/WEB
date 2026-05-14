@@ -1,0 +1,61 @@
+body {
+    font-family: "montserrat";
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}
+
+.form {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+label {
+    color: #1c5427;
+}
+
+input {
+    width: 80%;
+    margin-left: 15px;
+    height: 30pt;
+    background-color: #b8d79e;
+    border: 0px;
+    color: #1c5427;
+}
+
+h1 {
+    color: #1c5427;
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 2.2rem;
+    }
+
+    label {
+        font-size: 1rem
+    }
+
+    input {
+        height: 20pt;
+    }
+
+    form {
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+}

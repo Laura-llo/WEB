@@ -145,6 +145,11 @@ span {
     margin-right: -50px;
 }
 
+#iconoIng, #iconoEsp {
+    position: relative;
+    z-index: 3;
+}
+
 #iconoIng:hover {
     color: #b8d79e;
     transform: scale(1.3);

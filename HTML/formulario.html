@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUTAS PIEDRAHITA</title>
-    <link rel="stylesheet" href="../CSS/rutas.css">
+    <title>FORMULARIO PIEDRAHITA</title>
+    <link rel="stylesheet" href="../CSS/formulario.css">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <script src="../JS/ingles.js" defer></script>
     <script src="../JS/menu.js" defer></script>
@@ -48,39 +48,34 @@
            
     </header>
 
-    <main>
+    <h1>FORMULARIO</h1>
 
-        <section id="rutas">
-            <img src="../FOTO/bonilla 10.jpg" alt="">
+    <form>
+
+        <section class="form">
+            <label class="cast" for="nombre">Nombre</label>
+            <label class="eng" for="nombre">Name</label>
+            <input type="text" id="nombre">
         </section>
 
-        <section id="cuadrado">
-            <div class="imagen1cast cast"></div>
-            <div class="imagen1eng eng"></div>
-            <div class="imagen2cast cast"></div>
-            <div class="imagen2eng eng"></div>
-            <div class="imagen3cast cast"></div>
-            <div class="imagen3eng eng"></div>
-            <div class="imagen4cast cast"></div>
-            <div class="imagen4eng eng"></div>
-            <div class="imagen5cast cast"></div>
-            <div class="imagen5eng eng"></div>
+        <section class="form">
+            <label class="cast" for="apellido">Apellido</label>
+            <label class="eng" for="apellido">Last name</label>
+            <input type="text" id="apellido">
         </section>
 
-        <section class="texto1">
-            <img src="../FOTO/fondo 4.jpg" alt="">
-            <h3 class="cast">Palacio de los Duques de Alba</h3>
-            <h3 class="eng">Palace of the Dukes of Alba</h3>
-            <p class="cast">Mandado construir por D. Fernando de Silva y Álvarez de Toledo, y obra del arquitecto
-                Jacques Marquet, traído a España por el duque para edificar el palacio de estilo barroco francés, se
-                construyó donde estaba el antiguo castillo de los Álvarez de Toledo.</p>
-            <p class="eng">Commissioned by Don Fernando de Silva y Álvarez de Toledo and designed by the architect
-                Jacques Marquet brought to Spain by the duke to build the palace in the French Baroque style it was
-                constructed on the site of the former Álvarez de Toledo castle.</p>
-            <button target="_blank" class="vermas cast"><a href="#">Ver mas</a></button>
-            <button target="_blank" class="vermas eng"><a href="#">See more</a></button>
+        <section class="form">
+            <label class="cast" for="numero">Número TLF</label>
+            <label class="eng" for="numero">Phone number</label>
+            <input type="number" id="numero">
         </section>
-    </main>
+
+        <section class="form">
+            <label class="cast" for="correo">Correo</label>
+            <label class="eng" for="correo">Mail</label>
+            <input type="text" id="correo">
+        </section>
+    </form>
 
     <footer>
         <p class="cast">

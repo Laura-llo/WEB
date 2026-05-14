@@ -6,3 +6,222 @@ body {
     font-family: "montserrat";
     src: url(../TIPO/Montserrat-VariableFont_wght.ttf);
 }
+
+#rutas img {
+    width: 100%;
+}
+
+#cuadrado {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+@media (max-width: 576px) {
+    #cuadrado {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        gap: 20px;
+    }
+}
+
+.imagen1cast {
+    background-image: url(../FOTO/1x/ruta\ img1.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+.imagen1cast:hover {
+    background-image: url(../FOTO/1x/rutas\ tex1.png);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* .imagen1eng {
+        background-image: url(../FOTO/1x/home\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen1eng:hover {
+        background-image: url(../FOTO/1x/home\ claro.png);
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    } */
+
+.imagen2cast {
+    background-image: url(../FOTO/1x/rutas\ img\ 2.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+.imagen2cast:hover {
+    background-image: url(../FOTO/1x/rutas\ tex2.png);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* .imagen2eng {
+        background-image: url(../FOTO/1x/events\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen2eng:hover {
+        background-image: url(../FOTO/1x/events\ claro.png);
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    } */
+
+.imagen3cast {
+    background-image: url(../FOTO/1x/rutas\ img3.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+.imagen3cast:hover {
+    background-image: url(../FOTO/1x/rutas\ tex3.png);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* .imagen3eng {
+        background-image: url(../FOTO/1x/monuments\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen3eng:hover {
+        background-image: url(../FOTO/1x/monuments\ claro.png);
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    } */
+
+.imagen4cast {
+    background-image: url(../FOTO/1x/rutas\ img4.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+.imagen4cast:hover {
+    background-image: url(../FOTO/1x/rutas\ tex4.png);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* .imagen4eng {
+        background-image: url(../FOTO/1x/surroundings\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen4eng:hover {
+        background-image: url(../FOTO/1x/surroundings\ claro.png);
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    } */
+
+.imagen5cast {
+    background-image: url(../FOTO/1x/rutas\ img5.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+}
+
+.imagen5cast:hover {
+    background-image: url(../FOTO/1x/rutas\ tex5.png);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* .imagen5eng {
+        background-image: url(../FOTO/1x/home\ oscuro.png);
+        width: 130px;
+        height: 130px;
+        background-size: cover;
+    }
+
+    .imagen5eng:hover {
+        background-image: url(../FOTO/1x/home\ claro.png);
+        transform: scale(1.2);
+        transition: 0.5s ease-in-out;
+    } */
+
+.texto1 {
+    width: 100%;
+}
+
+.texto1 img {
+    width: 90%;
+    margin: 60px;
+}
+
+h3 {
+    color: #1c5427;
+    margin-left: 60px;
+}
+
+p {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+@media (max-width: 576px) {
+    .texto1 img {
+        width: 90%;
+        margin: 20px;
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 0.7rem;
+    }
+
+}
+
+.vermas {
+    color: white;
+    background-color: #1c5427;
+    border: none;
+    height: 40px;
+    width: 80px;
+    margin-left: 87%;
+}
+
+@media (max-width: 576px) {
+    .vermas {
+        height: 40px;
+        width: 80px;
+        margin-left: 76%;
+    }
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #b8d79e;
+}
+
+button a:hover {
+    color: #1c5427;
+}
