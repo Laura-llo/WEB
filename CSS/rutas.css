@@ -8,15 +8,15 @@ body {
 }
 
 #rutas img {
-    width: 100%;
+    width: 100.5%;
+    margin-left: -5px;
 }
 
 #cuadrado {
     display: flex;
     flex-direction: row;
-    gap: 70px;
-    margin-top: 60px;
-    margin-left: 150px;
+    gap: 50px;
+    margin: 130px;
 }
 
 @media (max-width: 576px) {
@@ -30,8 +30,8 @@ body {
 
 .imagen1cast {
     background-image: url(../FOTO/1x/ruta\ img1.png);
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
 }
 
@@ -43,8 +43,8 @@ body {
 
 /* .imagen1eng {
         background-image: url(../FOTO/1x/home\ oscuro.png);
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background-size: cover;
     }
 
@@ -56,8 +56,8 @@ body {
 
 .imagen2cast {
     background-image: url(../FOTO/1x/rutas\ img\ 2.png);
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
 }
 
@@ -69,8 +69,8 @@ body {
 
 /* .imagen2eng {
         background-image: url(../FOTO/1x/events\ oscuro.png);
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background-size: cover;
     }
 
@@ -82,8 +82,8 @@ body {
 
 .imagen3cast {
     background-image: url(../FOTO/1x/rutas\ img3.png);
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
 }
 
@@ -95,8 +95,8 @@ body {
 
 /* .imagen3eng {
         background-image: url(../FOTO/1x/monuments\ oscuro.png);
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background-size: cover;
     }
 
@@ -108,8 +108,8 @@ body {
 
 .imagen4cast {
     background-image: url(../FOTO/1x/rutas\ img4.png);
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
 }
 
@@ -121,8 +121,8 @@ body {
 
 /* .imagen4eng {
         background-image: url(../FOTO/1x/surroundings\ oscuro.png);
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background-size: cover;
     }
 
@@ -134,8 +134,8 @@ body {
 
 .imagen5cast {
     background-image: url(../FOTO/1x/rutas\ img5.png);
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
 }
 
@@ -147,8 +147,8 @@ body {
 
 /* .imagen5eng {
         background-image: url(../FOTO/1x/home\ oscuro.png);
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
         background-size: cover;
     }
 
@@ -193,35 +193,4 @@ p {
         font-size: 0.7rem;
     }
 
-}
-
-.vermas {
-    color: white;
-    background-color: #1c5427;
-    border: none;
-    height: 40px;
-    width: 80px;
-    margin-left: 87%;
-}
-
-@media (max-width: 576px) {
-    .vermas {
-        height: 40px;
-        width: 80px;
-        margin-left: 76%;
-    }
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #b8d79e;
-}
-
-button a:hover {
-    color: #1c5427;
 }
