@@ -42,3 +42,23 @@ body {
     font-size: 1.6rem;
     margin-top: 40px;
 }
+
+@media (max-width: 576px) {
+    #imgparapente img {
+        margin-left: 40px;
+        width: 35%;
+        margin-top: 40px;
+    }
+
+    #inicio img {
+        width: 88%;
+        margin-left: 40px;
+    }
+
+    #inicio h1 {
+    color: #1c5427;
+    font-size: 4rem;
+    margin-top: 40px;
+    text-align: center;
+}
+}
