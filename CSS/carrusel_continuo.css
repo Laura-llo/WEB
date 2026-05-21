@@ -1,0 +1,77 @@
+/* ANIMACIÓN PARA MOVER EL CONTENIDO EN EL EJE X (HORIZONTAL) */
+@keyframes carr_scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#carrusel {
+    display: flex;
+    overflow: hidden;
+}
+
+#carrusel:hover {
+    .carr_grupo {
+        animation-play-state: paused;
+    }
+}
+
+.carr_grupo {
+    /* CONFIGURAMOS EL ITEM DEL CONTENEDOR FLEX PARA QUE NO LOS REDIMENSIONE */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    /* CADA GRUPO FORMA UNA REJILLA DE 4 COLUMNAS  */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-right: 10px;
+
+    /* ACTIVAMOS LA ANIMACIÓN DE LOS 2 GRUPOS */
+    animation-name: carr_scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: carr_scroll 10s linear infinite; */
+}
+
+.carrusel_item {
+    /* posicionamos relativo para que su texto se pueda poner en absoluto sobre este contenedor */
+    position: relative;
+
+}
+
+.carrusel_item .texto {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    min-width: 80%;
+    min-height: 40%;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    /* EN EL CUADRO DE TEXTO PODEMOS PONER FILTROS PARA EFECTOS, MEJORANDO LA DECORACIÓN */
+    /* https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/backdrop-filter */
+    backdrop-filter: blur(2px);
+    /* backdrop-filter: brightness(60%);
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%); */
+}
+
+.carr_img {
+    width: 100%;
+    border-radius: 10px;
+}
